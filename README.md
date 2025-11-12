@@ -25,7 +25,7 @@ Comprehensive time series analysis comparing ARIMA and Box-Cox transformed model
 │   ├── tables/                      # Results CSVs
 │   └── models/                      # Saved ARIMA objects
 ├── manuscript/
-│   └── manuscript.tex               # Publication draft
+│   └── manuscript.pdf               # Publication draft
 └── README.md
 ```
 
