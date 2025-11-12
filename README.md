@@ -60,7 +60,7 @@ model <- readRDS("output/models/final_arima_model.rds")
 
 If you use this code, please cite:
 ```
-[Your Name]. (2025). Time Series Modeling of Brent Crude Oil Prices: 
+Bentum Welson. (2025). Time Series Modeling of Brent Crude Oil Prices: 
 A Comparative Analysis of ARIMA and Box-Cox Transformed Models. 
 GitHub repository: https://github.com/[username]/crude-oil-arima-analysis
 ```
