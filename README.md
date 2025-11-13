@@ -8,7 +8,7 @@
 **Author:** Bentum Welson  
 **Institution:** Department of Statistics, Kwame Nkrumah University of Science and Technology  
 **Course:** L200 Research Project  
-**Year:** 2024-2025
+**Year:** November 2023
 
 ---
 
