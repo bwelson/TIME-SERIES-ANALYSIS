@@ -350,9 +350,8 @@ source("BESTARIMA.r")
 ## Contact
 
 **Bentum Welson**  
-Department of Statistics  
 Kwame Nkrumah University of Science and Technology, Ghana
-bentumwelson523@gmail.com
+-bentumwelson523@gmail.com
 
 For questions about this research, please open an issue in this repository.
 
