@@ -1,0 +1,7 @@
+"Series","Test","Statistic","P_Value","Conclusion"
+"boxcox Original","ADF",-1.95339844544174,0.595724269879193,"Non-stationary"
+"boxcox Original","PP",-2.27055570542726,0.462099976647455,"Non-stationary"
+"boxcox Original","KPSS",1.97210363682323,0.01,"Non-stationary"
+"boxcox Differenced","ADF",-6.67897891881338,0.01,"Stationary"
+"boxcox Differenced","PP",-13.2272966275418,0.01,"Stationary"
+"boxcox Differenced","KPSS",0.0945112389005127,0.1,"Stationary"

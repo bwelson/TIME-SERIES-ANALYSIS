@@ -1,0 +1,5 @@
+"Test","Statistic","P_Value","Conclusion"
+"Ljung-Box (Autocorrelation)",18.4393021501869,0.427084914679394,"✓ No autocorrelation"
+"Shapiro-Wilk (Normality)",0.966029114557969,3.46504272558896e-06,"✗ Non-normal residuals"
+"ARCH (Heteroskedasticity)",45.0458240629597,0.00108778964369038,"✗ ARCH effects present"
+"Jarque-Bera (Normality)",66.8389419693607,3.10862446895044e-15,"✗ Non-normal residuals"

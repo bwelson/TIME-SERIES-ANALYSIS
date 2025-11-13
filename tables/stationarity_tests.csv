@@ -1,0 +1,7 @@
+"Series","Test","Statistic","P_Value","Conclusion"
+"Original","ADF",-2.16151459614599,0.508041038067838,"Non-stationary"
+"Original","PP",-2.41060410226448,0.403094964287139,"Non-stationary"
+"Original","KPSS",1.33343452745201,0.01,"Non-stationary"
+"Differenced","ADF",-6.52466811637446,0.01,"Stationary"
+"Differenced","PP",-11.168063897034,0.01,"Stationary"
+"Differenced","KPSS",0.0565284891032225,0.1,"Stationary"

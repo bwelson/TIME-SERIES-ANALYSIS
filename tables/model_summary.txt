@@ -1,0 +1,27 @@
+$Model_Specification
+[1] "ARIMA(1,1,0)"
+
+$Data_Range
+[1] "1999 to 2023" "12 to 4"     
+
+$N_Observations
+[1] 281
+
+$Stationarity
+[1] "Differencing required (d = 1 )"
+
+$Seasonality
+[1] "Not detected"
+
+$Model_Adequate
+[1] TRUE
+
+$Test_RMSE
+[1] 14.46134
+
+$Test_MAPE
+[1] 14.84545
+
+$Residual_Issues
+[1] " Non-normality ARCH effects"
+
