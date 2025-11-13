@@ -23,22 +23,20 @@ This study conducts a comprehensive time series analysis of monthly Brent crude 
 ```
 crude-oil-arima-analysis/
 ├── README.md                          # This file
-├── BESTARIMA.r                        # Complete R analysis script
+├── ARIMACODE.r                        # Complete R analysis script
 ├── Report:Manuscript.pdf              # Full research manuscript (25 pages)
-├── BESTARIMA.tex                      # LaTeX source with embedded R output
 ├── crude.csv                          # Raw data (monthly prices 1999-2023)
-└── output/
-    ├── figures/                       # 13 diagnostic plots
-    │   ├── 01_timeseries_original.png
-    │   ├── 05_residual_diagnostics.png
-    │   ├── 09_actual_vs_fitted_boxcox_BACKTRANSFORMED.png
-    │   └── ...
-    ├── tables/                        # Model diagnostics & results
-    │   ├── stationarity_tests.csv
-    │   ├── residual_diagnostics.csv
-    │   └── model_comparison_boxcox_vs_original.csv
-    └── models/
-        └── final_arima_model.rds      # Saved ARIMA(1,1,0) model
+├── figures/                       # 13 diagnostic plots
+│   ├── 01_timeseries_original.png
+│   ├── 05_residual_diagnostics.png
+│   ├── 09_actual_vs_fitted_boxcox_BACKTRANSFORMED.png
+│   └── ...
+├── tables/                        # Model diagnostics & results
+│   ├── stationarity_tests.csv
+│   ├── residual_diagnostics.csv
+│   └── model_comparison_boxcox_vs_original.csv
+└── models/
+    └── final_arima_model.rds      # Saved ARIMA(1,1,0) model
 ```
 
 ---
@@ -170,14 +168,14 @@ crude_ts_boxcox <- BoxCox(crude_ts, lambda = lambda)
 ## Key Visualizations
 
 ### Figure 1: Time Series Shows Three Volatility Regimes
-<img src="output/figures/01_timeseries_original.png" width="700" alt="Original Time Series">
+<img src="figures/01_timeseries_original.png" width="700" alt="Original Time Series">
 
 - **1999-2007:** Gradual upward trend ($20→$75)
 - **2008-2009:** Financial crisis spike ($134.79 peak) and collapse
 - **2010-2023:** High volatility with COVID-19 shock ($19.17 low)
 
 ### Figure 5: Residual Diagnostics Reveal Key Patterns
-<img src="output/figures/05_residual_diagnostics.png" width="700" alt="Residual Diagnostics">
+<img src="figures/05_residual_diagnostics.png" width="700" alt="Residual Diagnostics">
 
 **Interpretation:**
 - ✓ No autocorrelation (ACF within bounds)
@@ -186,7 +184,7 @@ crude_ts_boxcox <- BoxCox(crude_ts, lambda = lambda)
 - ⚠️ Non-normality expected for commodity prices
 
 ### Figure 9: Box-Cox Model Back-Transformed to Original Scale
-<img src="output/figures/09_actual_vs_fitted_boxcox_BACKTRANSFORMED.png" width="700" alt="Box-Cox Fitted">
+<img src="figures/09_actual_vs_fitted_boxcox_BACKTRANSFORMED.png" width="700" alt="Box-Cox Fitted">
 
 **Critical:** Always back-transform Box-Cox predictions for interpretation!
 
