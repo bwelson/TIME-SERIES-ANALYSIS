@@ -1,7 +1,6 @@
 # Time Series Analysis of Brent Crude Oil Prices
 
 [![R](https://img.shields.io/badge/R-4.4.2-blue.svg)](https://www.r-project.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Comparative Analysis of ARIMA and Box-Cox Transformed Models
 
@@ -181,7 +180,7 @@ crude_ts_boxcox <- BoxCox(crude_ts, lambda = lambda)
 - ✓ No autocorrelation (ACF within bounds)
 - ✗ Volatility clustering visible (ARCH effects)
 - ✗ Fat tails in distribution (leptokurtosis)
-- ⚠️ Non-normality expected for commodity prices
+-  Non-normality expected for commodity prices
 
 ### Figure 9: Box-Cox Model Back-Transformed to Original Scale
 <img src="figures/09_actual_vs_fitted_boxcox_BACKTRANSFORMED.png" width="700" alt="Box-Cox Fitted">
@@ -215,8 +214,8 @@ crude_ts_boxcox <- BoxCox(crude_ts, lambda = lambda)
 
 ### 4. Forecasting Performance
 ✓ **Short-term accuracy:** Test MAPE = 12.51% (good for 12-month horizon)  
-⚠️ **Inherent lag:** AR(1) models react to changes, don't anticipate them  
-⚠️ **Limited to 12 months:** Accuracy degrades beyond this horizon
+**Inherent lag:** AR(1) models react to changes, don't anticipate them  
+**Limited to 12 months:** Accuracy degrades beyond this horizon
 
 ---
 
@@ -256,10 +255,10 @@ lower_original <- InvBoxCox(forecast_box$lower[,2], lambda)
 
 ### Important Caveats
 
-⚠️ **AR(1) Limitation:** Model tracks prices with 1-period lag (inherent to autoregressive structure)  
-⚠️ **Non-normality:** Use bootstrapped CIs for hypothesis testing  
-⚠️ **Horizon:** Reliable only for 3-12 month forecasts  
-⚠️ **Structural breaks:** Model doesn't account for regime shifts (2008 crisis, 2020 pandemic)
+ **AR(1) Limitation:** Model tracks prices with 1-period lag (inherent to autoregressive structure)  
+ **Non-normality:** Use bootstrapped CIs for hypothesis testing  
+ **Horizon:** Reliable only for 3-12 month forecasts  
+ **Structural breaks:** Model doesn't account for regime shifts (2008 crisis, 2020 pandemic)
 
 ---
 
@@ -361,13 +360,12 @@ For questions about this research, please open an issue in this repository.
 
 - Bank of Ghana for data access
 - R Core Team and package developers (`forecast`, `tseries`, `ggplot2`)
-- KNUST Department of Statistics for computational resources
 
 ---
 
 ## License
 
-This project is available for academic and research use. Please cite appropriately.
+This project is available for academic and research use. 
 
 ---
 
